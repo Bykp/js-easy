@@ -1,9 +1,16 @@
 // Задача: Напишіть функцію countOccurrences, яка приймає рядок і символ,
 //  і повертає кількість входжень цього символу в рядку.
 
-
 function countOccurrences(str, char) {
-  //Ваш код
+  let count = 0;
+
+  for (let current of str) {
+    if (current === char) {
+      count++;
+    }
+  }
+
+  return count;
 }
 
 // Приклади використання:
